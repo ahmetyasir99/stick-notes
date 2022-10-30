@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Gaegu:wght@300;400;700&display=swap');
+* {
+	margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Caveat', cursive; 
+}
+
+body {
+  background: url('background.webp');
+  background-repeat: no-repeat;
+  background-size:cover
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(63, 174, 226);
+  padding: 0 3%;
+  margin: 2rem 10%;
+  border-radius: 30px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+i{
+  font-size: 23px;
+}
+
+button {
+  padding: 5px 8px;
+  background-color: rgb(245, 222, 225);
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.notes1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 130px;
+}
+.note {
+  background-color: pink;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 300px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+textarea::-webkit-scrollbar {
+  /*scrollun kendisi */
+  width: 0.6rem;
+  background-color: white;
+}
+
+textarea::-webkit-scrollbar-track {
+  /*scrollun içindeki çubuğun dışındaki alan*/
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  /*scrollun içindeki çubuk*/
+  border-radius: 3rem;
+  width: 0.8rem;
+  background-color: rgb(245, 202, 208)
+}
+
+.note-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.note textarea {
+  background-color: rgb(245, 222, 225);
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.note-header input[type = "text"] {
+ background: transparent;
+ font-size: 20px;
+ font-weight: 700;
+ border: none;
+ width: 100%;
+}
+
+.note-header .buttons {
+display: flex;
+}
